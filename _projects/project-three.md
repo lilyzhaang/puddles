@@ -1,13 +1,13 @@
 ---
-layout: project
-title: project-three
-slug: project-three
+layout: svs-decks
+title: svs-decks
+slug: svs-decks
 status: archived
-year: "2023"
-role: solo build
+year: "2020-2023"
+role: school mentorship!
 order: 3
-summary: A past project worth keeping visible, with a note on its status.
-stack: [html, css]
+summary: My first foray into startups and vc
+stack: [figma, teamwork, pitchbook, crunchbase, etc.]
 links: []
 ---
-Why it's archived, what you'd do differently now, and what it taught you.
+A bunch of decks from a mentorship program I did at NYU Stern. "Strategic Venture Society" was a way to dip my toes into tech, startups, and VC, setting me off on a long journey far, far away from investment banking. 
