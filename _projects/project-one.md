@@ -1,17 +1,17 @@
 ---
 layout: project
-title: project-one
-slug: project-one
+title: tarot calendar
+slug: tarot-calendar
 status: live
 year: "2026"
 role: solo build
 order: 1
-summary: One or two sentences on what this is and why you made it.
-stack: [react, node, sqlite]
+summary: An easy way to log my tarot spread
+stack: [claude, google calendar, apps script]
 links:
-  - label: live site
-    url: "#"
+  - label: see my calendar!
+    url: "https://calendar.google.com/calendar/u/0?cid=YzE5OTFkNWQ1YzVmNzZkOTE1ODc1YzI4NTJkYjE1YmNjNjk1YjhmYjUyZWViMjM0NmViOWE1MjRlMzA0YTNlM0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t"
   - label: source
     url: "#"
 ---
-The fuller story goes here: the problem you were solving, the constraints you were working under, and the decision you're most glad you made. Write as many paragraphs as you like — this is regular Markdown, so images, links and lists all work.
+I read tarot cards as a meditative way to start my day, and to keep in touch with myself. This handy calendar helps me put together my story and face the day with positive energy
