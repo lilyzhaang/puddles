@@ -41,8 +41,8 @@ nav.mono a:hover{border-bottom:1px solid var(--ink);}
 
 section{border-bottom:1px dashed var(--line);}
 section:last-of-type{border-bottom:none;}
-section > .section-head:first-child{padding-top:60px;}
-#about, #projects{padding-bottom:60px !important;}
+section > .section-head:first-child{padding-top:56px;}
+#about, #projects{padding-bottom:56px !important;}
 
 .section-head{display:flex; align-items:baseline; gap:14px; margin-bottom:32px;}
 .section-head .num{font-family:'Space Mono',monospace; color:var(--sub); font-size:13px;}
