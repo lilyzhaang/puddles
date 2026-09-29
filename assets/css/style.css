@@ -39,7 +39,7 @@ nav.mono a:hover{border-bottom:1px solid var(--ink);}
 .hero h1{font-family:'Space Mono',monospace; font-weight:700; font-size:clamp(28px,6vw,42px); margin:10px 0 14px; line-height:1.15;}
 .hero p{max-width:56ch; color:var(--sub); font-size:16px;}
 
-section{padding:96px 0; border-bottom:1px dashed var(--line);}
+section{padding:96px 48px; border-bottom:1px dashed var(--line);}
 section:last-of-type{border-bottom:none;}
 .section-head{display:flex; align-items:baseline; gap:14px; margin-bottom:32px;}
 .section-head .num{font-family:'Space Mono',monospace; color:var(--sub); font-size:13px;}
