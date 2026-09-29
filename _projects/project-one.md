@@ -7,7 +7,7 @@ year: "2026"
 role: solo build
 order: 1
 summary: An easy way to log my tarot spread
-stack: [claude, google calendar, apps script]
+stack: [gemini, google calendar, apps script]
 links:
   - label: see my calendar!
     url: "https://calendar.google.com/calendar/u/0?cid=YzE5OTFkNWQ1YzVmNzZkOTE1ODc1YzI4NTJkYjE1YmNjNjk1YjhmYjUyZWViMjM0NmViOWE1MjRlMzA0YTNlM0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t"
