@@ -1,15 +1,15 @@
 ---
 layout: project
-title: project-two
-slug: project-two
-status: wip
-year: "2026"
-role: with a friend
+title: handmade-website
+slug: handmade-website
+status: sunset
+year: "2022"
+role: solo build, with love
 order: 2
-summary: Short description. Keep it plain — what it does, who it's for.
-stack: [python]
+summary: once upon a time, I made a website by hand
+stack: [html css love]
 links:
-  - label: repo
-    url: "#"
+  - label: find it here!
+    url: "https://lilyzhaang.github.io/bones/"
 ---
-What's built so far, what's left, and why it's still worth showing even unfinished.
+There's lots of good things in here - many travel photos, personal essays, and even a dream future CV. I love net art and was really inspired to give it my own go!
