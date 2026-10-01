@@ -7,16 +7,17 @@ note: ""
 # _data/photos.yml; see docs/adding-a-photo.md. A photo only shows once
 # its image file exists, so these stay hidden until you upload them.
 photos:
-  # opening: two empty slots, hidden until whitney-3.jpg / whitney-4.jpg exist
+  # opening
   - side: left
-    top: 12
+    top: 8
     x: 0.30
     w: 0.46
     ratio: "3/4"
     speed: 0.28
-    title: whitney-3.jpg
-    src: /assets/images/side/whitney-3.jpg
-    alt: ""
+    title: whitney-biennial.jpg
+    src: /assets/images/side/whitney-biennial.jpg
+    alt: "Lily outside the Whitney under Whitney Biennial banners"
+  # empty slot, hidden until whitney-4.jpg exists
   - side: right
     top: 24
     x: 0.12
