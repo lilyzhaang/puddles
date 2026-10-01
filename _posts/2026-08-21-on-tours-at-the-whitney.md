@@ -62,7 +62,7 @@ As a docent at the Whitney, I’ve been trained to give “guided close-looking�
 
 There is an outstanding portrait by Alice Neel of the one and only, Andy Warhol. When I start by asking my participants to describe what they see, I get words like, sickly, vulnerable, elderly, meditative, peaceful. And as we come to unravel the celebrity from the person that Andy Warhol was, my participants share more about themselves. 
 
-“I never knew he was the subject of an assasination attempt…” 
+“He put on such a put-together facade, but he must have been so scared after that attack...” 
 
 “I wonder if maybe that’s his brave face… how he’s coping with this painting being done of him. It’s not a flattering one…” 
 
