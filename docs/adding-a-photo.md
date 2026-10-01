@@ -58,16 +58,16 @@ get any drift.
 
 ## Changing how long a closed photo stays closed
 
-Clicking × on a window fades it out, and it comes back by itself 3 minutes
+Clicking × on a window fades it out, and it comes back by itself 45 seconds
 later, even if the page is refreshed. (The close time is only stored in the
-visitor's own browser.) To change the 3 minutes, edit this line near the top
+visitor's own browser.) To change the 45 seconds, edit this line near the top
 of `assets/js/photos.js`:
 
 ```js
-const REOPEN_MS = 3 * 60 * 1000;   // a closed photo comes back after 3 minutes
+const REOPEN_MS = 45 * 1000;        // a closed photo comes back after 45 seconds
 ```
 
-e.g. `10 * 60 * 1000` for 10 minutes.
+e.g. `2 * 60 * 1000` for 2 minutes, or `20 * 1000` for 20 seconds.
 
 ## Removing a photo
 
