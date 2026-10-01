@@ -1,5 +1,13 @@
+{% comment %}
+  Side-photo windows. Home page uses _data/photos.yml; a musing passes its own
+  list: {% include photos.html photos=page.photos %}. Photos whose image file
+  isn't in the repo yet are skipped, so placeholders never show as broken.
+{% endcomment %}
+{% assign photo_list = include.photos | default: site.data.photos %}
 <div class="side-photos" aria-label="photos">
-  {% for p in site.data.photos %}
+  {% for p in photo_list %}
+  {% assign photo_file = site.static_files | where: "path", p.src %}
+  {% if photo_file.size > 0 %}
   <div class="side-photo side-{{ p.side }}" data-id="{{ p.src }}" data-speed="{{ p.speed | default: 0.3 }}" style="top:{{ p.top }}%; --x:{{ p.x }}; --w:{{ p.w }};">
     <div class="photo-win">
       <div class="photo-bar">
@@ -10,5 +18,6 @@
       <img src="{{ p.src | relative_url }}" alt="{{ p.alt }}" loading="lazy" decoding="async" style="aspect-ratio:{{ p.ratio | default: '3/4' }};">
     </div>
   </div>
+  {% endif %}
   {% endfor %}
 </div>

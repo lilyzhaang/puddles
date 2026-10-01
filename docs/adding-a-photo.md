@@ -2,8 +2,37 @@
 
 The little photo windows in the left and right margins of the homepage all
 come from one file: `_data/photos.yml`. Each photo is one entry (a block that
-starts with `- side:`). They only show on the homepage, and only when the
-browser window is at least 1200px wide.
+starts with `- side:`). Musings can have their own too (see below). Photos
+only show when the browser window is at least 1200px wide.
+
+## Photos on a musing
+
+A musing can have its own side photos (3–5 works best). Instead of
+`_data/photos.yml`, list them in the post's front matter under `photos:`,
+using the same fields, indented two more spaces:
+
+```yaml
+---
+layout: musing
+title: on tours at the whitney
+kind: essay
+photos:
+  - side: left
+    top: 8
+    x: 0.16
+    w: 0.50
+    ratio: "3/4"
+    speed: 0.28
+    title: whitney-1.jpg
+    src: /assets/images/side/whitney-1.jpg
+    alt: The Whitney's lobby
+---
+```
+
+Alternate left and right, and space them out down the page (e.g. 8, 28, 55,
+76). A photo only shows once its image file is actually in the repo, so it's
+fine to list a photo before you've uploaded it. Posts without `photos:`
+look exactly as before.
 
 ## Adding a photo
 

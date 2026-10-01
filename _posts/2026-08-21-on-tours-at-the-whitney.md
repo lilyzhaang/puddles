@@ -3,6 +3,49 @@ layout: musing
 title: on tours at the whitney
 kind: essay
 note: ""
+# Side-photo windows in the margins (3-5 is plenty). Same fields as
+# _data/photos.yml; see docs/adding-a-photo.md. A photo only shows once
+# its image file exists, so these stay hidden until you upload them.
+photos:
+  # opening: two empty slots, hidden until whitney-3.jpg / whitney-4.jpg exist
+  - side: left
+    top: 12
+    x: 0.30
+    w: 0.46
+    ratio: "3/4"
+    speed: 0.28
+    title: whitney-3.jpg
+    src: /assets/images/side/whitney-3.jpg
+    alt: ""
+  - side: right
+    top: 24
+    x: 0.12
+    w: 0.52
+    ratio: "3/4"
+    speed: 0.28
+    title: whitney-4.jpg
+    src: /assets/images/side/whitney-4.jpg
+    alt: ""
+  # beside the Alice Neel paragraphs
+  - side: right
+    top: 50
+    x: 0.22
+    w: 0.48
+    ratio: "2/3"
+    speed: 0.31
+    title: neel-warhol.jpg
+    src: /assets/images/side/neel-warhol.jpg
+    alt: "Alice Neel, Andy Warhol (1970)"
+  # beside the Racing Thoughts paragraphs
+  - side: left
+    top: 66
+    x: 0.16
+    w: 0.50
+    ratio: "3/2"
+    speed: 0.31
+    title: racing-thoughts.jpg
+    src: /assets/images/side/racing-thoughts.jpg
+    alt: "Jasper Johns, Racing Thoughts (1983)"
 ---
 Since October 2025, I’ve been intentionally setting aside time to learn again. Not because I’m worried about being out-skilled by a computer, but because I had missed that feeling of learning. 
 

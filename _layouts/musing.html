@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+{% if page.photos %}<div id="photo-stage" class="article-stage">{% endif %}
 <article class="article">
   <a href="{{ '/musings/' | relative_url }}" class="mono back-link">← back to musings</a>
   <div class="section-head"><span class="num mono">03</span><h2>{{ page.title }}</h2></div>
@@ -12,3 +13,8 @@ layout: default
     {{ content }}
   </div>
 </article>
+{% if page.photos %}
+{% include photos.html photos=page.photos %}
+</div>
+<script src="{{ '/assets/js/photos.js' | relative_url }}?v=3" defer></script>
+{% endif %}
