@@ -11,20 +11,20 @@ photos:
     top: 8
     x: 0.16
     w: 0.50
-    ratio: "3/4"
+    ratio: "3/2"
     speed: 0.28
-    title: whitney-1.jpg
-    src: /assets/images/side/whitney-1.jpg
-    alt: ""
+    title: racing-thoughts.jpg
+    src: /assets/images/side/racing-thoughts.jpg
+    alt: "Jasper Johns, Racing Thoughts (1983)"
   - side: right
     top: 28
     x: 0.22
     w: 0.48
-    ratio: "3/4"
+    ratio: "2/3"
     speed: 0.28
-    title: whitney-2.jpg
-    src: /assets/images/side/whitney-2.jpg
-    alt: ""
+    title: neel-warhol.jpg
+    src: /assets/images/side/neel-warhol.jpg
+    alt: "Alice Neel, Andy Warhol (1970)"
   - side: left
     top: 55
     x: 0.30
