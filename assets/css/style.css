@@ -1,19 +1,19 @@
 :root{
   --grad:linear-gradient(160deg,#fce9a8 0%,#f0c9a0 46%,#f2b6ae 100%);
   --ink:#20180f; --sub:#6b5c4d; --link:#8a3b2a; --visited:#6d3a68; --accent:#e08a3c;
-  --line:rgba(32,24,15,.28); --card:rgba(255,255,255,.5); --card-line:rgba(32,24,15,.35);
+  --line:rgba(32,24,15,.28); --card:rgba(255,255,255,.5); --card-line:rgba(32,24,15,.35); --win-solid:#f8ead6;
 }
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
     --grad:linear-gradient(160deg,#101d33 0%,#0a1120 55%,#020203 100%);
     --ink:#f3ead6; --sub:#a99d86; --link:#e7b98a; --visited:#c7a3d8; --accent:#e7b98a;
-    --line:rgba(243,234,214,.18); --card:rgba(255,255,255,.05); --card-line:rgba(243,234,214,.22);
+    --line:rgba(243,234,214,.18); --card:rgba(255,255,255,.05); --card-line:rgba(243,234,214,.22); --win-solid:#111a2b;
   }
 }
 :root[data-theme="dark"]{
   --grad:linear-gradient(160deg,#101d33 0%,#0a1120 55%,#020203 100%);
   --ink:#f3ead6; --sub:#a99d86; --link:#e7b98a; --visited:#c7a3d8; --accent:#e7b98a;
-  --line:rgba(243,234,214,.18); --card:rgba(255,255,255,.05); --card-line:rgba(243,234,214,.22);
+  --line:rgba(243,234,214,.18); --card:rgba(255,255,255,.05); --card-line:rgba(243,234,214,.22); --win-solid:#111a2b;
 }
 *{box-sizing:border-box;}
 html{scroll-behavior:smooth;}
@@ -125,13 +125,28 @@ footer{max-width:720px; margin:0 auto; padding:34px 24px 34px; font-family:'Spac
 }
 .photo-win.closed{opacity:0; transform:scale(.85); visibility:hidden; pointer-events:none; transition:opacity .35s ease, transform .35s ease, visibility 0s linear .35s;}
 .photo-win.no-anim{transition:none;}
-.photo-bar{display:flex; align-items:center; gap:8px; padding:5px 6px 5px 8px; border-bottom:1px solid var(--card-line); font-family:'Space Mono',monospace; font-size:11px;}
+.photo-win{container-type:inline-size;}
+.photo-bar{display:flex; align-items:center; gap:6px; padding:4px 4px 4px 8px; border-bottom:1px solid var(--card-line); font-family:'Space Mono',monospace; font-size:11px;}
 .photo-bar .dots{display:flex; gap:4px; flex:none;}
 .photo-bar .dots i{width:6px; height:6px; border:1px solid var(--card-line); display:block;}
+@container (max-width:150px){ .photo-bar .dots{display:none;} }
 .photo-title{flex:1; min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; color:var(--sub);}
-.photo-x{flex:none; background:none; border:1px solid transparent; color:var(--ink); font-family:'Space Mono',monospace; font-size:13px; line-height:1; width:18px; height:18px; padding:0; cursor:pointer;}
-.photo-x:hover, .photo-x:focus-visible{border-color:var(--card-line); background:var(--card);}
+.photo-btn{flex:none; display:flex; align-items:center; justify-content:center; background:none; border:1px solid var(--card-line); color:var(--ink); font-family:'Space Mono',monospace; font-size:17px; line-height:1; width:22px; height:22px; padding:0; cursor:pointer;}
+.photo-btn:hover, .photo-btn:focus-visible{background:var(--card); border-color:var(--ink);}
 .photo-win img{display:block; width:100%; height:auto; object-fit:cover;}
+.side-photo img{cursor:zoom-in;}
+
+/* enlarged photo ("lightbox") — same window, centered over a dimmed page */
+html.lb-open{overflow:hidden; scrollbar-gutter:stable;}
+.photo-lightbox{position:fixed; inset:0; width:100vw; height:100vh; max-width:none; max-height:none; margin:0; padding:0; border:0; background:transparent; overflow:hidden;}
+.photo-lightbox::backdrop{background:transparent;}
+.lb-backdrop{position:absolute; inset:0; background:rgba(12,9,6,.62); backdrop-filter:blur(3px); cursor:zoom-out;}
+.lb-win{position:absolute; background:var(--win-solid); box-shadow:0 18px 60px rgba(0,0,0,.35); transform-origin:0 0;}
+.lb-win .photo-bar{font-size:12px; padding:5px 5px 5px 10px;}
+.lb-win .photo-bar .dots i{width:8px; height:8px;}
+.lb-win .photo-btn{width:26px; height:26px; font-size:19px;}
+.lb-win .icon-zoom{width:15px; height:15px;}
+.lb-win img{cursor:zoom-out; background:var(--card);}
 @media (prefers-reduced-motion: reduce){
   .side-photo{will-change:auto;}
   .photo-win, .photo-win.closed{transform:none;}
