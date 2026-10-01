@@ -50,6 +50,9 @@ that is the piece itself, in plain Markdown.
    Images need to be hosted somewhere with a URL (see the note on images
    in `docs/editing-text.md`).
 
+   To put photo windows in the margins beside the post (like the
+   homepage), see "Photos on a musing" in `docs/adding-a-photo.md`.
+
 4. Commit the file. It appears on `/musings/` automatically, and its
    own page (title links there) is generated at
    `/musings/a-short-slug/`.

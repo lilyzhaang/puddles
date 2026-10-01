@@ -3,6 +3,46 @@ layout: musing
 title: on tours at the whitney
 kind: essay
 note: ""
+# Side-photo windows in the margins (3-5 is plenty). Same fields as
+# _data/photos.yml; see docs/adding-a-photo.md. A photo only shows once
+# its image file exists, so these stay hidden until you upload them.
+photos:
+  - side: left
+    top: 8
+    x: 0.16
+    w: 0.50
+    ratio: "3/4"
+    speed: 0.28
+    title: whitney-1.jpg
+    src: /assets/images/side/whitney-1.jpg
+    alt: ""
+  - side: right
+    top: 28
+    x: 0.22
+    w: 0.48
+    ratio: "3/4"
+    speed: 0.28
+    title: whitney-2.jpg
+    src: /assets/images/side/whitney-2.jpg
+    alt: ""
+  - side: left
+    top: 55
+    x: 0.30
+    w: 0.46
+    ratio: "3/4"
+    speed: 0.31
+    title: whitney-3.jpg
+    src: /assets/images/side/whitney-3.jpg
+    alt: ""
+  - side: right
+    top: 76
+    x: 0.12
+    w: 0.52
+    ratio: "3/4"
+    speed: 0.31
+    title: whitney-4.jpg
+    src: /assets/images/side/whitney-4.jpg
+    alt: ""
 ---
 Since October 2025, I’ve been intentionally setting aside time to learn again. Not because I’m worried about being out-skilled by a computer, but because I had missed that feeling of learning. 
 

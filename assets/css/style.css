@@ -105,12 +105,13 @@ footer{max-width:720px; margin:0 auto; padding:34px 24px 34px; font-family:'Spac
 .counter{border:1px solid var(--card-line); padding:3px 8px;}
 
 /* side-photo windows (home page margins) — see _data/photos.yml */
-#photo-stage{position:relative;}
+#photo-stage{position:relative; --col:720px;}   /* width of the text column */
+#photo-stage.article-stage{--col:640px;}
 .side-photos{display:none;}
 @media (min-width:1200px){
   .side-photos{display:block;}
   .side-photo{
-    --m:calc((100% - 720px) / 2);   /* margin width; % = #photo-stage width */
+    --m:calc((100% - var(--col)) / 2);   /* margin width; % = #photo-stage width */
     position:absolute; width:min(calc(var(--w) * var(--m)), 190px); z-index:1; will-change:transform;
   }
   .side-left{left:calc(var(--x) * var(--m));}
