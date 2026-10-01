@@ -2,22 +2,41 @@
   Side-photo windows. Home page uses _data/photos.yml; a musing passes its own
   list: {% include photos.html photos=page.photos %}. Photos whose image file
   isn't in the repo yet are skipped, so placeholders never show as broken.
+  If a same-named copy exists in /assets/images/large/, the enlarged view uses it.
 {% endcomment %}
 {% assign photo_list = include.photos | default: site.data.photos %}
 <div class="side-photos" aria-label="photos">
   {% for p in photo_list %}
   {% assign photo_file = site.static_files | where: "path", p.src %}
   {% if photo_file.size > 0 %}
+  {% assign large_src = p.src | replace: '/images/side/', '/images/large/' %}
+  {% assign large_file = site.static_files | where: "path", large_src %}
+  {% if large_file.size == 0 %}{% assign large_src = p.src %}{% endif %}
   <div class="side-photo side-{{ p.side }}" data-id="{{ p.src }}" data-speed="{{ p.speed | default: 0.3 }}" style="top:{{ p.top }}%; --x:{{ p.x }}; --w:{{ p.w }};">
     <div class="photo-win">
       <div class="photo-bar">
         <div class="dots"><i></i><i></i><i></i></div>
         <span class="photo-title">{{ p.title }}</span>
-        <button class="photo-x" type="button" aria-label="Close {{ p.title }}">×</button>
+        <button class="photo-btn photo-zoom" type="button" aria-label="Enlarge {{ p.title }}" title="Enlarge">{% include icon-zoom.html dir="in" %}</button>
+        <button class="photo-btn photo-x" type="button" aria-label="Close {{ p.title }}" title="Close">×</button>
       </div>
-      <img src="{{ p.src | relative_url }}" alt="{{ p.alt }}" loading="lazy" decoding="async" style="aspect-ratio:{{ p.ratio | default: '3/4' }};">
+      <img src="{{ p.src | relative_url }}" data-large="{{ large_src | relative_url }}" alt="{{ p.alt }}" loading="lazy" decoding="async" style="aspect-ratio:{{ p.ratio | default: '3/4' }};">
     </div>
   </div>
   {% endif %}
   {% endfor %}
 </div>
+<template id="photo-lightbox-tpl">
+  <dialog class="photo-lightbox" aria-label="Enlarged photo">
+    <div class="lb-backdrop"></div>
+    <div class="photo-win lb-win">
+      <div class="photo-bar">
+        <div class="dots"><i></i><i></i><i></i></div>
+        <span class="photo-title"></span>
+        <button class="photo-btn lb-zoom" type="button" aria-label="Shrink photo" title="Shrink">{% include icon-zoom.html dir="out" %}</button>
+        <button class="photo-btn lb-x" type="button" aria-label="Close enlarged photo" title="Close">×</button>
+      </div>
+      <img alt="">
+    </div>
+  </dialog>
+</template>

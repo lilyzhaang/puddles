@@ -41,6 +41,12 @@ look exactly as before.
    `assets/images/side/`. Full-size camera files are several MB each and
    make the page slow; 600px is plenty for a window this small.
 
+   Optional, for a sharp enlarged view: also save a copy about 1400px on its
+   longest side, with the **same filename**, in `assets/images/large/`.
+   Clicking a photo's magnifier (or the photo itself) opens it in a big
+   window; that window uses the large copy if there is one, and the 600px
+   one otherwise.
+
 2. In `_data/photos.yml`, copy an existing entry and paste it under the
    right side's heading, then edit it:
 
@@ -102,7 +108,7 @@ e.g. `2 * 60 * 1000` for 2 minutes, or `30 * 1000` for 30 seconds.
 
 Delete its whole entry (from `- side:` down to its `alt:` line) from
 `_data/photos.yml` and commit. You can delete the image from
-`assets/images/side/` too, or leave it.
+`assets/images/side/` (and `assets/images/large/`) too, or leave it.
 
 ## If the whole site stops updating
 
