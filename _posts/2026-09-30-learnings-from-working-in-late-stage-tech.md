@@ -4,14 +4,7 @@ title: learnings from working in late-stage tech
 kind: essay
 note: I really never thought I'd be acquired by Google... yet here I am! 
 ---
-Write your essay here in plain Markdown. Paragraphs, *italics*, **bold**, [links](https://example.com), and images all work normally.
-
-> Blockquotes render as a quiet pull-quote — useful for the one line worth setting apart.
-
-Keep paragraphs short. The layout is tuned for reading, not skimming.
-
-
-1. Things change and you won’t always get an explanation why. When I worked at Amex, any change of direction was pre-planned, planned, communicated, disseminated, discussed, put forth… all before it actually happened. 
+1. Things change and you won’t always get an explanation why. When I worked at Amex, any change of direction was pre-planned, planned, communicated, disseminated, discussed, put forth… all before it actually happened.
 
 This is a refreshing change in tech, because I can respect when decisions are made quickly, when it can enable everyone to execute sooner. It’s usually better to know why, but sometimes that’s not possible. **The tradeoff here is everyone’s participation in exchange for speed.**
 
