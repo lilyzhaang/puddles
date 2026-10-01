@@ -1,7 +1,7 @@
 hero_tag: "personal site since 2026"
-hero_title: "I'm Lily, and here's what you should know about me!"
+hero_title: "Lily Zhang, before you meet her irl!"
 hero_body: >
-  This is a small corner of the web for my work and my notes.
+  This is my 2nd iteration of a personal website. I plan to stash some professional and personal ideas here, so please look around! My email is lilyzhang.inbox@gmail.com, or you can find me here: https://www.linkedin.com/in/lilyzhaang/. 
 
 initials: "LZ"
 about_intro: "I'm a systems and product generalist, interested in getting deeper into building processes and businesses."
@@ -10,19 +10,21 @@ resume:
     what: "Business Systems Analyst @ Wiz, acquired by Google Cloud"
     note: "GTM data cleanliness, managing 3p vendors, and supporting a $32B sale to a hyperscaler"
   - when: "october 2025 — now"
-    what: "Guided Close Looking Docent @ Whitney Museum of Art"
+    what: "Guided Close Looking Docent Volunteer @ Whitney Museum of Art"
     note: "leading observational dialogues about the Whitney's permanent collection"
   - when: "sep 2023 - may 2025"
     what: "Lending Product Operations Analyst @ American Express, International Card Services"
-    note: "Maintaining and iterating on multiple credit limit increase-related journeys in 6+ markets"
+    note: "maintaining and iterating on multiple credit limit increase-related journeys in 6+ markets"
   - when: "june 2022 - aug 2022"
     what: "Lending Product Intern @ American Express, International Card Services"
     note: "Learning SQL on a real database is the best way to learn SQL"
   - when: "june 2021 - july 2021"
     what: "Revenue Operations Intern @ Pendo.io"
+    note: "got my first taste of data analysis here, in a simple Salesforce report..."
   - when: "june 2020 - july 2020"
     what: "Sales Intern @ Sharebite"
+    note: "signed up 30+ restaurants for a mission-driven food ordering platform"
   - when: "2019—2023"
     what: "B.S. in Business, Minor in Public Health @ NYU"
     note: "Undergraduate Stern program, Concentration in Finance"
-tags: ["museums", "nyc", "writing", "yoga", "running"]
+tags: ["art museums", "strength training", "yoga", "running", "travel", "photography"]
