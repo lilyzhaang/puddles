@@ -6,12 +6,12 @@
 <title>{{ page.title | default: site.title }}</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v=5">
+<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v=6">
 </head>
 <body>
 <header>
   <div class="headbar">
-    <div class="logotype">{{ site.title | upcase }}<span>.log</span></div>
+    <a class="logotype" href="{{ '/' | relative_url }}">my digital home~</a>
     <nav class="mono">
       <a href="{{ '/' | relative_url }}#about">about</a>
       <a href="{{ '/' | relative_url }}#projects">projects</a>
