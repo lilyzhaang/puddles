@@ -1,7 +1,7 @@
 // Side-photo windows on the home page: slow parallax drift + closable windows.
 // Settings for each photo live in _data/photos.yml.
 (() => {
-  const REOPEN_MS = 45 * 1000;        // a closed photo comes back after 45 seconds
+  const REOPEN_MS = 15 * 1000;        // a closed photo comes back after 15 seconds
   const KEY = 'closedPhotos';        // localStorage: { [photo src]: closedAt timestamp }
 
   const stage = document.getElementById('photo-stage');
