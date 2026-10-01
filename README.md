@@ -1,4 +1,4 @@
-# YOUR NAME — personal site
+# lily zhang — personal site
 
 A Jekyll site: About + Projects on one scroll (`index.html`), Musings as a
 separate long-form section. GitHub Pages builds Jekyll sites automatically —
