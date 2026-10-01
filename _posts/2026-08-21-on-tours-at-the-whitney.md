@@ -56,7 +56,7 @@ When I got into college at NYU, learning became harder. For one, there were way 
 
 There were still some classes which really tickled my brain though - a class about the history of disease, or about Italian Futurism and fascism. And those classes were the first foray into learning by discussion, passing thoughts back and forth until we had explored all nooks and crannies of a sentence, and decided to move on. 
 
-Starting last October, I began training as a docent at the Whitney Museum of Modern Art. It truly feels like an honor to do this. I have been a fan of the Whitney ever since I moved to New York in 2019, where it felt like every other weekend, I was making a trip to a new museum I hadn’t been to (shoutout to the New Museum). 
+Starting last October, I began training as a docent at the Whitney Museum of American Art. It truly feels like an honor to do this. I have been a fan of the Whitney ever since I moved to New York in 2019, where it felt like every other weekend, I was making a trip to a new museum I hadn’t been to (shoutout to the New Museum). 
 
 As a docent at the Whitney, I’ve been trained to give “guided close-looking” tours to groups of up to 25 people. The tours are conversational in structure but the objective of it is to create moments of empathy, using the modern art as a facilitator for that conversation. That might sound like a bit of a reach, but let me take you through this. 
 
