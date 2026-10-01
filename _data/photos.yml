@@ -1,0 +1,8 @@
+   - side: left
+     top: 6          # how far down the page, in percent
+     x: 0.14         # how far in from the page edge
+     w: 0.50         # how wide
+     speed: 0.30     # how slowly it drifts
+     title: lz_1.jpg
+     src: /assets/images/lz_1.jpg
+     alt: Lily in DC
