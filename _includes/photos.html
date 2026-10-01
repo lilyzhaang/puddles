@@ -1,0 +1,14 @@
+<div class="side-photos" aria-label="photos">
+  {% for p in site.data.photos %}
+  <div class="side-photo side-{{ p.side }}" data-id="{{ p.src }}" data-speed="{{ p.speed | default: 0.3 }}" style="top:{{ p.top }}%; --x:{{ p.x }}; --w:{{ p.w }};">
+    <div class="photo-win">
+      <div class="photo-bar">
+        <div class="dots"><i></i><i></i><i></i></div>
+        <span class="photo-title">{{ p.title }}</span>
+        <button class="photo-x" type="button" aria-label="Close {{ p.title }}">×</button>
+      </div>
+      <img src="{{ p.src | relative_url }}" alt="{{ p.alt }}" loading="lazy" decoding="async" style="aspect-ratio:{{ p.ratio | default: '3/4' }};">
+    </div>
+  </div>
+  {% endfor %}
+</div>

@@ -1,8 +1,82 @@
-   - side: left
-     top: 6          # how far down the page, in percent
-     x: 0.14         # how far in from the page edge
-     w: 0.50         # how wide
-     speed: 0.30     # how slowly it drifts
-     title: lz_1.jpg
-     src: /assets/images/lz_1.jpg
-     alt: Lily in DC
+# Side-photo windows on the home page. See docs/adding-a-photo.md.
+#   side:  left or right margin
+#   top:   how far down the page, in percent. Within a side, leave ~28 below a
+#          portrait photo and ~18 below a landscape one so they never touch.
+#   x:     how far in from the page edge, as a fraction of the margin
+#   w:     how wide, as a fraction of the margin (x + w must stay under 1);
+#          capped at 190px so very wide screens don't pile photos together
+#   ratio: width/height of the image, e.g. "2/3" for portrait, "3/2" for landscape
+#   speed: how slowly it drifts (0.27 - 0.32). Within a side, make speeds go UP
+#          from top to bottom so windows spread apart as you scroll, never collide.
+
+# left margin
+- side: left
+  top: 4
+  x: 0.14
+  w: 0.50
+  ratio: "2/3"
+  speed: 0.27
+  title: lz_1.jpg
+  src: /assets/images/side/lz_1.jpg
+  alt: Lily in DC
+
+- side: left
+  top: 31
+  x: 0.34
+  w: 0.44
+  ratio: "3/2"
+  speed: 0.29
+  title: lz_2.jpg
+  src: /assets/images/side/lz_2.jpg
+  alt: Lily in a purple graduation gown, arm raised, holding roses
+
+- side: left
+  top: 50
+  x: 0.10
+  w: 0.52
+  ratio: "2/3"
+  speed: 0.30
+  title: lz_3.jpg
+  src: /assets/images/side/lz_3.jpg
+  alt: Lily on an outdoor tennis court
+
+- side: left
+  top: 78
+  x: 0.30
+  w: 0.44
+  ratio: "3/2"
+  speed: 0.32
+  title: lz_4.jpg
+  src: /assets/images/side/lz_4.jpg
+  alt: Lily at a restaurant table, chin resting on clasped hands
+
+# right margin
+- side: right
+  top: 14
+  x: 0.24
+  w: 0.46
+  ratio: "2/3"
+  speed: 0.28
+  title: lz_5.jpg
+  src: /assets/images/side/lz_5.jpg
+  alt: Lily outside a brick building on a sunny day
+
+- side: right
+  top: 42
+  x: 0.08
+  w: 0.56
+  ratio: "3/2"
+  speed: 0.30
+  title: lz_6.jpg
+  src: /assets/images/side/lz_6.jpg
+  alt: Lily reading a gallery guide in a museum, black and white
+
+- side: right
+  top: 70
+  x: 0.30
+  w: 0.44
+  ratio: "5/7"
+  speed: 0.31
+  title: lz_7.jpg
+  src: /assets/images/side/lz_7.jpg
+  alt: Double-exposure photo of a museum atrium with visitors
