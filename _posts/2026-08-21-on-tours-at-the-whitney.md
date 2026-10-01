@@ -2,7 +2,7 @@
 layout: musing
 title: on tours at the whitney
 kind: essay
-note: ""
+note: "I signed up for the interest form 5+ years before I ever got an email about it"
 # Side-photo windows in the margins (3-5 is plenty). Same fields as
 # _data/photos.yml; see docs/adding-a-photo.md. A photo only shows once
 # its image file exists, so these stay hidden until you upload them.
