@@ -1,0 +1,17 @@
+{% comment %}
+  Images shown side by side as small windows, each enlargeable in the
+  lightbox. A project lists them in its front matter under `gallery:`
+  (src, title, alt); see docs/adding-a-project.md.
+{% endcomment %}
+<div class="gallery">
+  {% for g in include.items %}
+  <div class="photo-win gallery-win">
+    <div class="photo-bar">
+      <div class="dots"><i></i><i></i><i></i></div>
+      <span class="photo-title">{{ g.title }}</span>
+      <button class="photo-btn photo-zoom" type="button" aria-label="Enlarge {{ g.title }}" title="Enlarge">{% include icon-zoom.html dir="in" %}</button>
+    </div>
+    <img src="{{ g.src | relative_url }}" data-large="{{ g.src | relative_url }}" alt="{{ g.alt }}" loading="lazy" decoding="async">
+  </div>
+  {% endfor %}
+</div>
