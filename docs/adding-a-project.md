@@ -45,6 +45,26 @@ below for the full writeup.
    About and Musings headings, with the expanded card holding the full
    writeup, tech stack, and links.
 
+## Adding screenshots
+
+To show images side by side inside the project's window (each one opens
+big when clicked, like the homepage photos), upload them to
+`assets/images/projects/` and list them in the front matter under
+`gallery:`:
+
+```yaml
+gallery:
+  - src: /assets/images/projects/weather-app-home.png
+    title: weather-app-home.png      # label in the little window's title bar
+    alt: The weather app's home screen showing a 5-day forecast
+  - src: /assets/images/projects/weather-app-settings.png
+    title: weather-app-settings.png
+    alt: The settings screen
+```
+
+Two fit side by side; more wrap onto the next row, and on phones they
+stack. Screenshots up to about 1600px wide are fine.
+
 ## Removing a project
 
 Delete its file from `_projects/` and commit.

@@ -1,0 +1,14 @@
+<template id="photo-lightbox-tpl">
+  <dialog class="photo-lightbox" aria-label="Enlarged photo">
+    <div class="lb-backdrop"></div>
+    <div class="photo-win lb-win">
+      <div class="photo-bar">
+        <div class="dots"><i></i><i></i><i></i></div>
+        <span class="photo-title"></span>
+        <button class="photo-btn lb-zoom" type="button" aria-label="Shrink photo" title="Shrink">{% include icon-zoom.html dir="out" %}</button>
+        <button class="photo-btn lb-x" type="button" aria-label="Close enlarged photo" title="Close">×</button>
+      </div>
+      <img alt="">
+    </div>
+  </dialog>
+</template>

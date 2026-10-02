@@ -134,7 +134,10 @@ footer{max-width:720px; margin:0 auto; padding:34px 24px 34px; font-family:'Spac
 .photo-btn{flex:none; display:flex; align-items:center; justify-content:center; background:none; border:1px solid var(--card-line); color:var(--ink); font-family:'Space Mono',monospace; font-size:17px; line-height:1; width:22px; height:22px; padding:0; cursor:pointer;}
 .photo-btn:hover, .photo-btn:focus-visible{background:var(--card); border-color:var(--ink);}
 .photo-win img{display:block; width:100%; height:auto; object-fit:cover;}
-.side-photo img{cursor:zoom-in;}
+.photo-win img[data-large]{cursor:zoom-in;}
+
+/* side-by-side image windows inside a project (front matter `gallery:`) */
+.gallery{display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:16px; align-items:start; margin:24px 0 8px;}
 
 /* enlarged photo ("lightbox") — same window, centered over a dimmed page */
 html.lb-open{overflow:hidden; scrollbar-gutter:stable;}

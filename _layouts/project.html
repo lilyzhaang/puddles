@@ -12,6 +12,7 @@ layout: default
       </div>
       <p>{{ page.summary }}</p>
       <div class="article-body">{{ content }}</div>
+      {% if page.gallery %}{% include gallery.html items=page.gallery %}{% endif %}
       <div class="taglist">
         {% for s in page.stack %}<span class="t">{{ s }}</span>{% endfor %}
       </div>
