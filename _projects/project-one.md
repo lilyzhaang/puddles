@@ -14,3 +14,7 @@ links:
 
 ---
 I read tarot cards as a meditative way to start my day, and to keep in touch with myself. This handy calendar helps me put together my story and face the day with positive energy
+
+![The Daily Tarot Logger: a form for three cards and a private question, with a "Log to Public Calendar" button]({{ '/assets/images/projects/tarot-logger-form.png' | relative_url }})
+
+![A logged reading on the tarot calendar: the three cards as the event title, with Gemini's interpretation underneath]({{ '/assets/images/projects/tarot-calendar-entry.png' | relative_url }})
